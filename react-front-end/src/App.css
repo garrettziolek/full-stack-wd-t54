@@ -1,0 +1,212 @@
+/* Default styles for all screen sizes */
+body {
+  font-family: lato, sans-serif;
+  color: black;
+  background-color: #ff6db4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 80%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+li {
+  color: black;
+  margin-top: 20px;
+  list-style: none;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fcdfff;
+  box-shadow: 10px 10px 0 #333;
+}
+
+li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+li p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 18px;
+  align-items: flex-start;
+}
+
+form label input {
+  margin-top: 10px;
+}
+
+form input {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  font-size: 18px;
+  background-color: #90ee90;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button[type="submit"] {
+  background-color: #90ee90;
+  color: #333333;
+}
+
+button {
+  font-size: 16px;
+  background-color: #69d2e7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+input[type="hidden"] {
+  display: none;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+  #root {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  li h3 {
+    font-size: 20px;
+  }
+
+  li p {
+    font-size: 16px;
+  }
+
+  form label {
+    font-size: 16px;
+  }
+
+  form label input {
+    font-size: 16px;
+  }
+
+  form input {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  form button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #root {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  li {
+    padding: 8px;
+  }
+
+  li h3 {
+    font-size: 16px;
+  }
+
+  li p {
+    font-size: 14px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form label input {
+    font-size: 14px;
+  }
+
+  form input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
